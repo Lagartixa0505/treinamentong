@@ -1,0 +1,174 @@
+
+/* Estilos para a barra de navegação */
+body {
+    background-color: #b0c6d4; /* Defina a cor de fundo desejada aqui */
+}
+
+nav {
+    background-color: #232335;
+    color: white;
+    padding: 0 20px; /* Ajustei o padding para 10px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a img {
+    width: 50px; /* Defina a largura desejada */
+    height: 35px; /* Mantém a proporção da altura automaticamente */
+}
+
+/* Estilos para o contêiner do login */
+#login-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0px; /* Adicionando margem na parte inferior */
+}
+
+#login-button input[type="text"] {
+    margin-right: 0px;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-button button {
+    background-color: #232335; /* Cor de fundo inicial */
+    border: 2px solid transparent; /* Borda transparente para evitar "pulo" */
+    color: white;
+    padding: 4px 15px;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave */
+    
+}
+
+
+
+#login-button .botao {
+    background-color: #0a4137; /* Cor específica para o botão com a classe 'botao' */
+    
+    border-radius: 5%;
+}
+
+#login-button .botao:hover {
+    background-color: #01758a; /* Cor de fundo ao passar o mouse */
+    
+}
+
+
+/*Fim barra de navegacao*/
+
+
+/*  */
+.product-container {
+    max-width: 1200px; /* Ajustei o valor do width máximo */
+    margin: 0 auto; /* Isso centralizará o container na página */
+    padding: 20px 0; /* Adicionei um espaçamento superior e inferior */
+    display: flex; /* Exibe os produtos em uma linha horizontal */
+    flex-wrap: wrap; /* Permite que os produtos quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: space-around; /* Distribui uniformemente os produtos ao longo da linha */
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.product {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.product button {
+    margin-top: 10px;
+    background-color: #00a2ff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #00a2ff;
+}
+
+/* Estilos para o rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #5b6f88;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer-container {
+    max-width: 1200px; /* Ajuste o valor do width máximo */
+    margin: 0 auto; /* Centraliza o container na página */
+    display: flex; /* Aplica o modelo de layout flexível */
+    flex-wrap: wrap; /* Permite que os itens do container quebrem para a próxima linha conforme necessário */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do container */
+}
+
+@media only screen and (min-width:1024px){
+    .search-bar input[type="text"]{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .search-bar input[type="text"]{
+        width: 120px;
+    }
+    .info{
+        font-size: .75em;
+    }
+}
+@media only screen and (max-width:500px){
+    header{
+        justify-content: space-between;
+    }
+    .search-bar {
+        display: none;
+    }
+    .info{
+        font-size: .75em;
+    }
+}

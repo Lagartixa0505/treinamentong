@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040a16; /* Defina a cor de fundo desejada aqui */
+}
+
+/*  Seccao header*/
+header {
+    background-color: #02050c; /* YouTube red */
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*logo*/
+.logo img {
+    max-width: 150px;
+}
+
+.logo h2 {
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.info h2 {
+    color: aliceblue;
+}
+
+/*search bar*/
+.search-bar input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #02050c;
+    color: #ccc;
+    border-radius: 10px; /* Valor pode ser ajustado para controlar o grau de arredondamento */
+}
+.search-bar button:hover {
+    background-position: 0 0; /* Movendo o gradiente para a esquerda */
+}
+.search-bar button {
+    background: linear-gradient(to right, #b0ebfd 0%, #5ed2da 50%, #00d9ff 50%, #00c3ff 100%);
+    color: #02050c;
+    padding: 8px 16px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-position 1s ease; /* Adicionando transição de posição do gradiente */
+    background-size: 200% 100%; /* Adicionando tamanho do gradiente */
+    background-position: 100% 0; /* Movendo o gradiente para a direita */
+}
+
+/*Botao Home*/
+.voltar button {
+    background: #16223d;
+    color: #ffffff;
+    padding: 8px 16px;
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-position 1s ease; /* Adicionando transição de posição do gradiente */
+    background-size: 200% 100%; /* Adicionando tamanho do gradiente */
+    background-position: 100% 0; /* Movendo o gradiente para a direita */
+}
+/*Fim de seccao header*/
+
+/*seccao main*/
+main {
+    padding: 20px;
+}
+/*containerM*/
+.video {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between;
+    max-width: 920px;
+    width: 100%;
+    gap: 5px;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+}
+.recuar button:hover {
+    background-position: 0 0; /* Movendo o gradiente para a esquerda */
+}
+.recuar button {
+    background: linear-gradient(to right, #fdb0b0 0%, #da5e68 50%, #ff004c 50%, #ff002b 100%);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-position 1s ease; /* Adicionando transição de posição do gradiente */
+    background-size: 200% 100%; /* Adicionando tamanho do gradiente */
+    background-position: 100% 0; /* Movendo o gradiente para a direita */
+}
+
+.proximo button:hover {
+    background-position: 0 0; /* Movendo o gradiente para a esquerda */
+}
+
+.proximo button {
+    background: linear-gradient(to right, #b0dffd 0%, #5ea2da 50%, #0051ff 50%, #0077ff 100%);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-position 1s ease; /* Adicionando transição de posição do gradiente */
+    background-size: 200% 100%; /* Adicionando tamanho do gradiente */
+    background-position: 100% 0; /* Movendo o gradiente para a direita */
+}
+
+.info2 {
+    margin-left: 10px;
+    background-color: #ccc ;
+}
+
+
+.video-player{
+    max-width: 920px;
+}
+
+.video-player video {
+    width: 100%;
+    height: auto;
+    max-width: 920px; /* Defina a largura máxima, se necessário */
+    margin: 0 auto; /* Para centralizar horizontalmente */
+    border-radius: 12px;   
+}
+
+.descricao{
+    max-width: 920px;
+    background-color: #071229;
+    padding: 3px 5px;
+    color: #fff;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+#state{
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    font-weight: bold;
+    font-size: small;
+}
+
+/*Fim de containerM*/
+
+
+/*Fim de seccao main*/
+
+/*Footer*/
+footer {
+    background-color: #02050c;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width:1024px){
+    .search-bar input[type="text"]{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .search-bar input[type="text"]{
+        width: 120px;
+    }
+    .info{
+        font-size: .75em;
+    }
+}
+@media only screen and (max-width:500px){
+    header{
+        justify-content: space-between;
+    }
+    .search-bar {
+        display: none;
+    }
+    .info{
+        font-size: .75em;
+    }
+}
